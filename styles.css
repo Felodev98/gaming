@@ -261,3 +261,25 @@ a.ctaa i {
   width: 100%;
   height: auto;
 }
+
+@keyframes slide { 
+  from {
+    tranform:translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: centre;
+}
+.logos-slide {
+  white-space: nowrap;
+  animation: 5s slide infinite linear ;
+}
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
